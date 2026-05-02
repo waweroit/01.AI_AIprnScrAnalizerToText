@@ -1,0 +1,14 @@
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.AssemblyInfoInputs.cache
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.AssemblyInfo.cs
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.csproj.CoreCompileInputs.cache
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\bin\Release\net8.0-windows\AIprnScrAnalizerToText.exe
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\bin\Release\net8.0-windows\AIprnScrAnalizerToText.deps.json
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\bin\Release\net8.0-windows\AIprnScrAnalizerToText.runtimeconfig.json
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\bin\Release\net8.0-windows\AIprnScrAnalizerToText.dll
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\bin\Release\net8.0-windows\AIprnScrAnalizerToText.pdb
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.dll
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\refint\AIprnScrAnalizerToText.dll
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.pdb
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\AIprnScrAnalizerToText.genruntimeconfig.cache
+C:\Users\tomasz.wawro\Desktop\AIprnScrAnalizerToText\obj\Release\net8.0-windows\ref\AIprnScrAnalizerToText.dll
