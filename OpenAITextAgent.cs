@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 namespace AIprnScrAnalizerToText;
 
-public sealed class OpenAICompatibleAgent : IAiAgent
+public sealed class OpenAITextAgent : ITextAiAgent
 {
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
@@ -13,14 +13,14 @@ public sealed class OpenAICompatibleAgent : IAiAgent
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
     };
 
-    public string Name => "OpenAIVision";
+    public string Name => "OpenAIText";
 
-    public async Task<string> AnalyzeImageAsync(byte[] imageBytes, string prompt, AppSettings settings, CancellationToken cancellationToken)
+    public async Task<string> CompleteAsync(string prompt, AppSettings settings, CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(settings.OpenAIApiKey)) throw new InvalidOperationException("Brak OpenAI ApiKey.");
         if (string.IsNullOrWhiteSpace(settings.OpenAIBaseUrl)) throw new InvalidOperationException("Brak OpenAI Base URL.");
-        if (string.IsNullOrWhiteSpace(settings.OpenAIVisionModel)) throw new InvalidOperationException("Brak OpenAI Vision Model.");
-        if (imageBytes is null || imageBytes.Length == 0) throw new ArgumentException("Obraz jest pusty.", nameof(imageBytes));
+        if (string.IsNullOrWhiteSpace(settings.OpenAITextModel)) throw new InvalidOperationException("Brak OpenAI Text Model.");
+        if (string.IsNullOrWhiteSpace(prompt)) throw new InvalidOperationException("Prompt dla Text LLM jest pusty.");
 
         using var httpClient = new HttpClient
         {
@@ -33,25 +33,10 @@ public sealed class OpenAICompatibleAgent : IAiAgent
 
         var payload = new
         {
-            model = settings.OpenAIVisionModel.Trim(),
+            model = settings.OpenAITextModel.Trim(),
             messages = new object[]
             {
-                new
-                {
-                    role = "user",
-                    content = new object[]
-                    {
-                        new { type = "text", text = prompt },
-                        new
-                        {
-                            type = "image_url",
-                            image_url = new
-                            {
-                                url = "data:image/png;base64," + Convert.ToBase64String(imageBytes)
-                            }
-                        }
-                    }
-                }
+                new { role = "user", content = prompt }
             },
             temperature = (double)settings.Temperature
         };
@@ -62,7 +47,7 @@ public sealed class OpenAICompatibleAgent : IAiAgent
 
         if (!response.IsSuccessStatusCode)
         {
-            throw new InvalidOperationException($"OpenAI Vision zwrócił HTTP {(int)response.StatusCode}: {body}");
+            throw new InvalidOperationException($"OpenAI Text zwrócił HTTP {(int)response.StatusCode}: {body}");
         }
 
         using var doc = JsonDocument.Parse(body);

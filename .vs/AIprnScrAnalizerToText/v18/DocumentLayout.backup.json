@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wawer\\Desktop\\GIT_Projects\\VisualStudio_Projects\\01.AI_Related\\01.AI_AIprnScrAnalizerToText\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF5E1A7D-05BB-064F-8CFE-14AE28833BE1}|AIprnScrAnalizerToText.csproj|c:\\users\\wawer\\desktop\\git_projects\\visualstudio_projects\\01.ai_related\\01.ai_aiprnscranalizertotext\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF5E1A7D-05BB-064F-8CFE-14AE28833BE1}|AIprnScrAnalizerToText.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\wawer\\Desktop\\GIT_Projects\\VisualStudio_Projects\\01.AI_Related\\01.AI_AIprnScrAnalizerToText\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\wawer\\Desktop\\GIT_Projects\\VisualStudio_Projects\\01.AI_Related\\01.AI_AIprnScrAnalizerToText\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAQwGQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-16T10:04:38.352Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

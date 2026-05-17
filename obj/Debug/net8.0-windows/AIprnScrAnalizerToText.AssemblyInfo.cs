@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIprnScrAnalizerToText")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1d2c00f61ce79c38eb15358337f2cea7a88f059")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIprnScrAnalizerToText")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIprnScrAnalizerToText")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
